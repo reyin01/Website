@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdeef4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #f06292;
+}
+
+.input-box {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f8c1d5;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #f06292;
+    outline: none;
+}
+
+.extra-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+.extra-links a {
+    color: #f06292;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    background: #f06292;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ec407a;
+}
+
+.signup-text {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #444;
+}
+
+.signup-text a {
+    background: #f06292;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 5px;
+}
+ /* Tambahan CSS untuk toggle */
+    .toggle-link {
+        color: #ff6b9d;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .toggle-link:hover {
+        text-decoration: underline;
+    }
+    .form-wrapper {
+        display: none;
+    }
+    .form-wrapper.active {
+        display: block;
+    }

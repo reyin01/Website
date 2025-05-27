@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login/Register | Group One</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/login.css" />
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    
+    <!-- LOGIN FORM -->
+    <form action="index.html" method="get" class="login-form form-wrapper active" id="loginForm">
+      <h2>Login to Website</h2>
+      <div class="input-box">
+        <i class='bx bx-user'></i>
+        <input type="text" name="username" placeholder="Username" required />
+      </div>
+      <div class="input-box">
+        <i class='bx bx-lock-alt'></i>
+        <input type="password" name="password" placeholder="Password" required />
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <p class="redirect-link">Don't have an account? <span class="toggle-link" onclick="showRegister()">Register here</span></p>
+    </form>
+
+    <!-- REGISTER FORM -->
+    <form action="index.html" method="post" class="login-form form-wrapper" id="registerForm">
+      <h2>Create an Account</h2>
+      <div class="input-box">
+        <i class='bx bx-user'></i>
+        <input type="text" name="username" placeholder="Username" required />
+      </div>
+      <div class="input-box">
+        <i class='bx bx-envelope'></i>
+        <input type="email" name="email" placeholder="Email" required />
+      </div>
+      <div class="input-box">
+        <i class='bx bx-lock-alt'></i>
+        <input type="password" name="password" placeholder="Password" required />
+      </div>
+      <div class="input-box">
+        <i class='bx bx-lock-open'></i>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+      </div>
+      <button type="submit" class="btn">Register</button>
+      <p class="redirect-link">Already have an account? <span class="toggle-link" onclick="showLogin()">Login here</span></p>
+    </form>
+
+  </div>
+
+  <script>
+    function showLogin() {
+      document.getElementById("loginForm").classList.add("active");
+      document.getElementById("registerForm").classList.remove("active");
+    }
+
+    function showRegister() {
+      document.getElementById("registerForm").classList.add("active");
+      document.getElementById("loginForm").classList.remove("active");
+    }
+  </script>
+</body>
+</html>
